@@ -1,0 +1,78 @@
+:root {
+    --bg: #121212;
+    --card-bg: #1e1e1e;
+    --primary: #4a90e2;
+    /* Azul mais escuro */
+    --text: #e0e0e0;
+    --muted: #a1a1a1;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: var(--primary);
+}
+
+header p {
+    color: var(--muted);
+    margin-top: 8px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 16px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card h3 {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+    color: var(--primary);
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+footer a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
